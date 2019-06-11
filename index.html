@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/sweetalert.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet prefetch">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+</head>
+<body>
+     <header>
+        <h1 id="pate-title">Arcade Game Demo</h1>
+    </header>
+    <div id="container">
+        <aside id="left">
+            <h2>Regras do jogo</h2>
+            <table>
+                <tr>
+                    <td ><img class="arrows"  src="images/arrows3.png" alt="Setas"></td>
+                    <td>Use as setas para mover o personagem</td>
+                </tr>
+                <tr>
+                    <td ><img src="images/water-block.png" alt="water-block"></td>
+                    <td>O objetivo do jogo é chegar até a água <br>(1 ponto e continue)</td>
+                </tr>
+                <tr>
+                    <td ><img src="images/grass-block.png" alt="Grass block"></td>
+                    <td>Inicio</td>
+                </tr>
+                <tr>
+                    <td ><img src="images/enemy-bug.png" alt="Enemy bug"></td>
+                    <td>Os inimigos são perigosos</td>
+                </tr>
+                <tr>
+                    <td >
+                        <img src="images/Heart.png" alt="Heart">
+                    </td>
+                    <td>Vidas +1</td>
+                </tr>
+                <tr>
+                    <td ><img src="images/Star.png" alt="Selector"></td>
+                    <td>Diminua a velocidade do jogo por 5 segundos</td>
+                </tr>
+                
+                <tr>
+                    <td ><img id="bar" src="images/YellowBar2.png" alt="Selector" ></td>
+                    <td>Tempo restante <br> de velocidade reduzida</td>
+                </tr>
+            </table>
+        </aside>
+        
+        <div id="main">
+            <div id="game">
+                <script src="js/resources.js"></script>
+                <script src="js/app.js"></script>
+                <script src="js/engine.js"></script>
+            </div>
+            <section>
+                <div class="score-board">Vidas:<span id="lives">3</span></div>
+                <div class="score-board">Pontuação:<span id="score">0</span></div>
+                <div class="btnRound">
+                    <a aria-hidden="true" class="fa fa-volume-up"></a>
+                </div>
+            </section>
+        </div>
+   
+         <aside id="player-options">
+            <div id="players">
+                <h2>Personagens jogáveis</h2>
+                <table>
+                    <tr>
+                        <td><img class="selected"  id="char-pink-girl" src="images/char-pink-girl.png" alt="Pink Hair Girl"></td>
+                        <td>Pinky</td>
+                    </tr>
+                    <tr>
+                        <td><img id="char-cat-girl" src="images/char-cat-girl.png" alt="Cat Hat Girl"></td>
+                        <td>Cat Girl</td>
+                    </tr>
+                    <tr>
+                        <td><img id="char-horn-girl" src="images/char-horn-girl.png" alt="Horn Girl"></td>
+                        <td>Devil</td>
+                    </tr>
+                    <tr>
+                        <td> <img id="char-princess-girl" src="images/char-princess-girl.png" alt="Princess Girl"></td>
+                        <td>Princesa</td>
+                    </tr>
+                    <tr>
+                        <td><img id="char-boy" src="images/char-boy.png" alt="Boy"></td>
+                        <td>Kiddo</td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body {
+    text-align: center;
+}
+
+#speed-slider{
+    width:600px;
+}
+
+#box{
+    width:75px;
+    height:0px;
+    background:yellow;
+    display:inline-block;
+    margin:0px 0px 0px 10px;
+}
+.starTimer{
+    animation: barShrink 5s linear 0s 1;
+}
+
+#container{
+    display:flex;
+}
+
+@keyframes barShrink {
+	0% {
+		height: 700px;
+	}
+	100% {
+		height: 0px;
+	}
+}
+
+.new{
+    margin-top:-40px;
+    padding-top:-39px;
+}
+
+#left{
+    float:left;
+}
+
+#player-options{
+    float:right;
+}
+
+#main{
+    float:left;
+}
+
+canvas{
+    padding-top:-39px;
+}
+
+.score-board{
+    font-size:xx-large;
+    margin:0 20px;
+    display:inline-block;
+}
+
+.btnRound {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:25px;
+    color:white;
+    border-radius:25px;
+    background:black;
+    cursor:pointer;
+}
+
+/*player selection*/
+.oval {
+    width:100px;
+    height: 30%;
+    overflow: hidden;
+/*    border-radius: 100%;*/
+    border-radius: 10%;
+    background:clear;
+    cursor:pointer;
+}
+
+#players td img {
+    width:100px;
+/*    height: 30%;*/
+    
+    overflow: hidden;
+/*    border-radius: 100%;*/
+    border-radius: 10%;
+    background:clear;
+    cursor:pointer;
+}
+
+ #players img {
+  height: 210%;
+  margin-top: -30px;
+  margin-bottom: -20px;
+  float: left;
+}
+
+/*
+.oval:hover{
+    background:lightblue;
+}
+*/
+
+#players td img:hover{
+    background:lightblue;
+}
+
+#players td{
+    width:100px;
+    height: 80px;
+    overflow: hidden;
+/*    border-radius: 100%;*/
+    border-radius: 10%;
+    background:clear;
+    cursor:pointer;
+}
+
+/*
+ .selected img{
+    background:blue;
+}
+*/
+ .selected {
+    background:blue;
+}
+
+#left .arrows{
+    width:60px;
+    height:60px;
+}
+
+td{
+    text-align:left;
+}
+
+#left #bar{
+    margin-top: -20px;
+    width:60px;
+    margin-top:20px;
+}
+
+#left td img{
+    width:60px;
+    height:100px;
+    margin-top:-10px;
+}
+
+.game{
+    margin:0;
+    padding:0;
+}
